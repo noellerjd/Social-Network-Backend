@@ -83,7 +83,7 @@ module.exports = {
     });
   },
   updateAUserThought(req, res) {
-    Thought.findOneAndUpdate({ _id: req.params.userId }, { $set: req.body })
+    Thought.findOneAndUpdate({ _id: req.params.thoughtId }, { $set: req.body })
       .then((thought) =>
         !thought
           ? res.status(404).json({
@@ -96,7 +96,7 @@ module.exports = {
   addReaction(req, res) {
     Thought.findOneAndUpdate(
       { _id: req.params.thoughtId },
-      { $addToSet: { reactions: req.body } }
+      { $addToSet: { reaction: req.body } }
     )
       .then((thought) =>
         !thought
@@ -108,7 +108,7 @@ module.exports = {
   removeReaction(req, res) {
     Thought.deleteOne(
       { _id: req.params.thoughtId },
-      { $pull: { reactions: { reactionId: req.params.reactionId } } }
+      { $pull: { reaction: { reactionId: req.params.reactionId } } }
     )
       .then((thought) =>
         !thought
