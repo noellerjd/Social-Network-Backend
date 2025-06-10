@@ -2,7 +2,7 @@
 ![image](https://user-images.githubusercontent.com/50307506/190061753-8f28f723-6fdc-48be-bc3c-58e28d255ea3.png)
 # Description
 
-The Social Network Backend is a RESTful API built using Express.js and MongoDB to support the core features of a social networking application. Designed with scalability and clean architecture in mind, it allows for full CRUD operations on users, thoughts (posts), reactions, and friend relationships. The backend is structured with modular Mongoose schemas and controllers, making it easy to maintain and extend. Relationships between users and their friends are modeled to reflect real-world connections, and input validation and error handling are implemented throughout to ensure data integrity. The application was thoroughly tested using Insomnia, ensuring reliable endpoints and a smooth developer experience.
+My Social Network Backend is a RESTful API built using Express.js and MongoDB to support the core features of a social networking application. Designed with scalability and clean architecture in mind, it allows for full CRUD operations on users, thoughts (posts), reactions, and friend relationships. The backend is structured with modular Mongoose schemas and controllers, making it easy to maintain and extend. Relationships between users and their friends are modeled to reflect real-world connections, and input validation and error handling are implemented throughout to ensure data integrity. The application was thoroughly tested using Insomnia, ensuring reliable endpoints and a smooth developer experience.
 
 
 My motivation behind this project was to get more familiar with backend work by creating a functional Social Media backend. 
